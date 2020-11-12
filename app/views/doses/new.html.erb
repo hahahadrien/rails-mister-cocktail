@@ -1,0 +1,6 @@
+<!-- app/views/doses/new.html.erb -->
+
+<%= simple_form_for [ @cocktail, @doses ] do |f| %>
+  <%= f.input :description %>
+  <%= f.submit "Submit dose", class: "btn btn-primary" %>
+<% end %>

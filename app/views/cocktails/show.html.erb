@@ -1,4 +1,30 @@
-<h1>Here is your very special... 🍹</h1>
+<h1>Here is your very delicious... 😋</h1>
 
 <!-- app/views/cocktail/show.html.erb -->
-<h2><%= @cocktail.name %></h2>
+<h2>🍸 <%= @cocktail.name %></h2>
+
+<p> 📃 Follow the recipe:
+  <br>
+  <% @cocktail.doses.each do |dose| %>
+  <br>
+  🍒 <%= dose.description %>
+  <%= dose.ingredient.name %>
+  <br>
+  <% end %>
+</p>
+
+<br>
+<p>↩️<%= link_to "Return to all cocktails", cocktails_path %></p>
+
+
+<!-- app/views/cocktails/show.html.erb -->
+
+<li class="list-group-item">
+  <%= dose.description %>
+  <%= link_to "Remove",
+
+    dose_path(dose),
+    method: :delete,
+    data: { confirm: "Are you sure?" } %>
+</li>
+

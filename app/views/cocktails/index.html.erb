@@ -3,7 +3,8 @@
 
 <ul>
   <% @cocktails.each do |cocktail| %>
-    <li>The <%= cocktail.name %></li>
+    <li><%= link_to cocktail.name, cocktail_path(cocktail), class: "btn btn-primary" %></li>
+    <br>
   <% end %>
 </ul>
 
