@@ -1,2 +1,7 @@
 <!-- app/views/cocktails/new.html.erb -->
-<%= render "form", cocktails: @cocktail %>
+<h1>Create Cocktail 🥥</h1>
+
+<%= simple_form_for @cocktail do |f| %>
+  <%= f.input :name %>
+  <%= f.submit "Save", class: 'btn btn-primary' %>
+<% end %>

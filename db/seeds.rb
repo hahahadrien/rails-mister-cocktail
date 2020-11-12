@@ -27,3 +27,15 @@ data["drinks"].each do |item|
   ingredient.save!
 end
 puts "All done :)"
+
+# Ingredient.create(name: "lemon")
+# Ingredient.create(name: "ice")
+# Ingredient.create(name: "mint leaves")
+
+Cocktail.create(name: "Gin tonic")
+Cocktail.create(name: "Moscow mule")
+Cocktail.create(name: "Cuba libre")
+
+Dose.create(description: "3 cl")
+Dose.create(description: "10 cl")
+Dose.create(description: "2 cuillières à café")
