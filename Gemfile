@@ -29,6 +29,9 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 # Gemfile
+gem 'cloudinary', '~> 1.16.0'
+
+# Gemfile
 gem 'dotenv-rails', groups: [:development, :test]
 
 # Gemfile

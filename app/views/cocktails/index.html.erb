@@ -1,6 +1,9 @@
 <!-- app/views/restaurants/index.html.erb -->
 <h1>Cocktails 🥂</h1>
 
+<%= cl_image_tag("san_francisco.jpg", width: 400, height: 300, crop: :fill) %>
+<%= cl_image_tag("boris_retreat_2017.jpg", width: 150, height: 150, crop: :thumb, gravity: :face) %>
+
 <ul>
   <% @cocktails.each do |cocktail| %>
     <li><%= link_to cocktail.name, cocktail_path(cocktail), class: "btn btn-primary" %></li>
@@ -9,3 +12,4 @@
 </ul>
 
 <p>➡️<%= link_to "+ add a new cocktail", new_cocktail_path %></p>
+
