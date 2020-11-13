@@ -8,13 +8,17 @@
   <p> 📃 Follow the recipe:
     <br>
     <% @cocktail.doses.each do |dose| %>
-    <li class="list-group-item"><%= dose.description %> 🍒 <%= dose.ingredient.name %></li>
-    <% end %>
+      <li class="list-group-item"><%= dose.description %> 🍒 <%= dose.ingredient.name %></li>
+        <%= link_to dose_path(dose), method: :delete, data: { confirm: "Are you sure?" } do %>
+      <% end %>
+  <% end %>
   </p>
   </ul>
+
+<%= render "doses/new", cocktail: @cocktail, dose: @dose %>
 
 <br>
 <p>↩️<%= link_to "Return to all cocktails", cocktails_path %></p>
 <br>
-<p>➡️<%= link_to "+ add a new dose", new_cocktail_dose_path(@cocktail) %></p>
-<br>
+
+

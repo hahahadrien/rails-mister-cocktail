@@ -1,0 +1,7 @@
+<h5>Feel free to update the recipe 🥄</h5>
+
+<%= simple_form_for [ cocktail, dose ] do |f| %>
+  <%= f.input :description %>
+  <%= f.association :ingredient, input_html: { class: "beautiful-dropdown" }, include_hidden: false %>
+  <%= f.submit "Add a dose", class: "btn btn-primary" %>
+<% end %>

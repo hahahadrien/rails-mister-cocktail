@@ -12,7 +12,6 @@
 # Ingredient.create(name: "mint leaves")
 
 require "open-uri"
-require "json"
 
 puts "Deleting all records"
 Ingredient.delete_all
@@ -32,12 +31,12 @@ puts "All done :)"
 # Ingredient.create(name: "ice")
 # Ingredient.create(name: "mint leaves")
 
-Cocktail.create(name: "Gin tonic")
-Cocktail.create(name: "Moscow mule")
-Cocktail.create(name: "Cuba libre")
+# Cocktail.create(name: "Gin tonic")
+# Cocktail.create(name: "Moscow mule")
+# Cocktail.create(name: "Cuba libre")
 
-Dose.create(cocktail_id: 1, ingredient_id: 1, description: "3 cl")
-Dose.create(cocktail_id: 1, ingredient_id: 8, description: "10 cl")
-Dose.create(cocktail_id: 2, ingredient_id: 9, description: "2 cuillières à café")
-Dose.create(cocktail_id: 3, ingredient_id: 6, description: "venin de serpent")
-Dose.create(cocktail_id: 4, ingredient_id: 3, description: "poison")
+# Dose.create(cocktail_id: 1, ingredient_id: 1, description: "3 cl")
+# Dose.create(cocktail_id: 1, ingredient_id: 8, description: "10 cl")
+# Dose.create(cocktail_id: 2, ingredient_id: 9, description: "2 cuillières à café")
+# Dose.create(cocktail_id: 3, ingredient_id: 6, description: "venin de serpent")
+# Dose.create(cocktail_id: 4, ingredient_id: 3, description: "poison")
