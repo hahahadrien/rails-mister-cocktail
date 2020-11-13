@@ -1,6 +1,10 @@
 <!-- app/views/restaurants/index.html.erb -->
 <h1>Cocktails 🥂</h1>
 
+<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @cocktail.photo.key, height: 300, width: 400, crop: :fill %>')">
+  Cool Cocktails
+</div>
+
 <%= cl_image_tag("san_francisco.jpg", width: 400, height: 300, crop: :fill) %>
 <%= cl_image_tag("boris_retreat_2017.jpg", width: 150, height: 150, crop: :thumb, gravity: :face) %>
 

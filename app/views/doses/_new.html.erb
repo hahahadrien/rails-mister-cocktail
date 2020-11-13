@@ -2,6 +2,7 @@
 
 <%= simple_form_for [ cocktail, dose ] do |f| %>
   <%= f.input :description %>
+  <%= f.input :photo, as: :file %>
   <%= f.association :ingredient, input_html: { class: "beautiful-dropdown" }, include_hidden: false %>
   <%= f.submit "Add a dose", class: "btn btn-primary" %>
 <% end %>
